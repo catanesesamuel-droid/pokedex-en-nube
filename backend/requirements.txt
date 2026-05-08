@@ -1,0 +1,6 @@
+azure-functions
+azure-cosmos
+PyJWT
+bcrypt
+python-dotenv
+requests
