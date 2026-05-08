@@ -77,10 +77,10 @@ Para mantener este README ligero y organizado, hemos dividido la información de
 El proyecto utiliza **Terraform** para automatizar la creación de toda la infraestructura necesaria.
 
 1.  **Preparar entorno:** Tener Azure CLI y Terraform instalados.
-2.  **Configurar secretos:** Crear `pokedex-infra/terraform.tfvars` con tu `jwt_secret`.
+2.  **Configurar secretos:** Crear `infra/terraform.tfvars` con tu `jwt_secret`.
 3.  **Desplegar:**
     ```bash
-    cd pokedex-infra
+    cd infra
     terraform init && terraform apply
     ```
 4.  **Publicar código:** Desplegar el backend con Azure Functions Core Tools y subir el `index.html` al Storage Account.

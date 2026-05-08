@@ -9,11 +9,11 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as e:
         return error_response(str(e), 401)
 
-    name_or_id = req.route_params.get("name_or_id", "").lower()
-    if not name_or_id:
-        return error_response("Se requiere el nombre o id del pokemon", 400)
+    q = req.params.get("q", "").lower()
+    if not q:
+        return error_response("Se requiere el parámetro de búsqueda 'q'", 400)
 
-    response = requests.get(f"https://pokeapi.co/api/v2/pokemon/{name_or_id}")
+    response = requests.get(f"https://pokeapi.co/api/v2/pokemon/{q}")
     if response.status_code == 404:
         return error_response("Pokemon no encontrado", 404)
     if response.status_code != 200:

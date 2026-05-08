@@ -31,11 +31,11 @@ Se utiliza **Azure Cosmos DB** (API SQL) como base de datos NoSQL. Los datos se 
 
 ### Usuarios (`/users`)
 - `GET /profile`: Recupera los datos del usuario actual.
-- `PUT /profile`: Actualiza nombre de usuario o contraseña.
+- `PUT /profile`: Actualiza username, bio y avatar.
 - `PUT /preferences`: Guarda preferencias como el tema (dark/light).
 
 ### Pokémon (`/pokemon`)
-- `GET /search`: Endpoint para búsqueda avanzada.
+- `GET /search`: Endpoint para búsqueda avanzada (parámetro `q`).
 - `GET /{name_or_id}`: Obtiene detalles de un pokémon específico.
 
 ### Colecciones

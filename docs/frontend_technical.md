@@ -32,6 +32,7 @@ En el código JavaScript, se debe configurar la variable `API_BASE` con la URL d
 
 ## 🛠️ Funciones Técnicas Clave
 - `doLogin() / doRegister()`: Gestionan el flujo de autenticación.
-- `renderPokemonGrid()`: Renderiza dinámicamente las tarjetas de los pokémons basándose en los datos obtenidos.
+- `renderPokemonPage()`: Renderiza dinámicamente las tarjetas de los pokémons basándose en los datos obtenidos.
 - `toggleTheme()`: Alterna las variables CSS para cambiar entre modo claro y oscuro.
-- `updateTeam() / updateFavorites()`: Sincronizan el estado local con la base de datos de Cosmos DB a través del backend.
+- `loadFavorites() / renderFavorites()`: Sincronizan y muestran la lista de favoritos desde el backend.
+- `updateTeam()`: Sincroniza el estado del equipo con la base de datos de Cosmos DB.
